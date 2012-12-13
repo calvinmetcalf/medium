@@ -35,6 +35,12 @@ window.onload = function() {
         (e.which === 39) && go(Math.min(s.length - 1, ++cur));
         (e.which === 37) && go(Math.max(0, --cur));
     };
+    var xStart;
+    md.addEventListener("touchstart",function(e){xStart = e.changedTouches[0].pageX}, false)
+    md.addEventListener("touchend",function(e){var test = e.changedTouches[0].pageX-xStart;
+    (test < 0) && go(Math.min(s.length - 1, ++cur));
+    (test > 0) && go(Math.max(0, --cur));
+    }, false)
     function parse_hash() {
         return Math.max(Math.min(
             s.length - 1,
