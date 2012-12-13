@@ -1,4 +1,8 @@
 window.onload = function() {
+    var converter = new Showdown.converter();
+    var md = document.getElementById("md");
+    var html = converter.makeHtml(md.innerHTML);
+    md.innerHTML = html.replace(/\<(\/)?p\>/g,'<$1div>');
     var s = document.getElementsByTagName('div'), cur = 0;
     if (!s) return;
     function go(n) {
