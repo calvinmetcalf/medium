@@ -1,6 +1,5 @@
 a presentation I made with [Big](https://github.com/tmcw/big), but big now can be done in markdown.  inside the span with the id "md" its all markdown with paragraphs turned into divs, aka just leave an empty line between your slides.
-##
-now with Markdown ! and swipes!1!
+## now with Markdown ! and swipes!1!
 ##
 This is a ridiculous presentation system that works great for
 creative, hurried people. See [the demo](http://macwright.org/big)
