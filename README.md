@@ -1,5 +1,7 @@
 a presentation I made with [Big](https://github.com/tmcw/big), but big now can be done in markdown.  inside the span with the id "md" its all markdown with paragraphs turned into divs, aka just leave an empty line between your slides.
 ##
+now with Markdown ! and swipes!1!
+##
 This is a ridiculous presentation system that works great for
 creative, hurried people. See [the demo](http://macwright.org/big)
 for an example of it working.
@@ -46,16 +48,26 @@ It's therefore imbued with standardslicious hypeclouds.
 The source looks like:
 
 ```html
-<!DOCTYPE html><html><head><title></title><link href='big.css' rel='stylesheet' type='text/css' /><script src='big.js'></script></head><body>
-<div>Big</div>
-<div><em>Presentation software</em> for busy busy hackers</div>
-<div>text</div>
-<div>as <em>big</em> as it can be</div>
-<div>no config</div>
-<div><em>1.5k</em></div>
-<div><em>images too</em></div>
-<div><img src='http://farm3.static.flickr.com/2506/5757000880_509440308e_z.jpg' /></div>
-<div>JS+CSS <a href='https://github.com/tmcw/big'>github.com/ tmcw/ big</a></div>
+<!DOCTYPE html><html><head><title></title><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><link href='big.css' rel='stylesheet' type='text/css' /><script src='showdown.js'></script><script src='big.js'></script></head><body>
+<span id="md">
+Big
+
+_Presentation software_ for busy busy hackers
+
+text
+s _big_ as it can be
+
+no config
+
+_1.5k_
+
+_images too_
+
+!(http://farm3.static.flickr.com/2506/5757000880_509440308e_z.jpg)
+
+JS+CSS [github.com/ tmcw/ big](https://github.com/tmcw/big)
+
+</span>
 ```
 
 ## 'features'
