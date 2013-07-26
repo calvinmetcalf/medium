@@ -35,5 +35,147 @@ div {
   top:0;
   left:0;
 }
+/*
 
-.GreenDOT {background:#0f0;}
+Google Code style (c) Aahan Krish <geekpanth3r@gmail.com>
+
+*/
+
+code code {
+  display: block; padding: 0.5em;
+  background: white; color: black;
+}
+
+code .comment,
+code .template_comment,
+code .javadoc,
+code .comment * {
+  color: #800;
+}
+
+code .keyword,
+code .method,
+code .list .title,
+code .clojure .built_in,
+code .nginx .title,
+code .tag .title,
+code .setting .value,
+code .winutils,
+code .tex .command,
+code .http .title,
+code .request,
+code .status {
+  color: #008;
+}
+
+code .envvar,
+code .tex .special {
+  color: #660;
+}
+
+code .string,
+code .tag .value,
+code .cdata,
+code .filter .argument,
+code .attr_selector,
+code .apache .cbracket,
+code .date,
+code .regexp {
+  color: #080;
+}
+
+code .sub .identifier,
+code .pi,
+code .tag,
+code .tag .keyword,
+code .decorator,
+code .ini .title,
+code .shebang,
+code .prompt,
+code .hexcolor,
+code .rules .value,
+code .css .value .number,
+code .literal,
+code .symbol,
+code .ruby .symbol .string,
+code .number,
+code .css .function,
+code .clojure .attribute {
+  color: #066;
+}
+
+code .class .title,
+code .haskell .type,
+code .smalltalk .class,
+code .javadoctag,
+code .yardoctag,
+code .phpdoc,
+code .typename,
+code .tag .attribute,
+code .doctype,
+code .class .id,
+code .built_in,
+code .setting,
+code .params,
+code .variable,
+code .clojure .title {
+  color: #606;
+}
+
+code .css .tag,
+code .rules .property,
+code .pseudo,
+code .subst {
+  color: #000;
+}
+
+code .css .class, code .css .id {
+  color: #9B703F;
+}
+
+code .value .important {
+  color: #ff7700;
+  font-weight: bold;
+}
+
+code .rules .keyword {
+  color: #C5AF75;
+}
+
+code .annotation,
+code .apache .sqbracket,
+code .nginx .built_in {
+  color: #9B859D;
+}
+
+code .codeprocessor,
+code .codeprocessor * {
+  color: #444;
+}
+
+code .tex .formula {
+  background-color: #EEE;
+  font-style: italic;
+}
+
+code .diff .header,
+code .chunk {
+  color: #808080;
+  font-weight: bold;
+}
+
+code .diff .change {
+  background-color: #BCCFF9;
+}
+
+code .addition {
+  background-color: #BAEEBA;
+}
+
+code .deletion {
+  background-color: #FFC8BD;
+}
+
+code .comment .yardoctag {
+  font-weight: bold;
+}
