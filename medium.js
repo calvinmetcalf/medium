@@ -3,10 +3,10 @@ window.onload = function() {
     var md = document.getElementById("md");
     var html = marked(md.innerHTML);
     md.innerHTML = html.replace(/\<(\/)?(?:[ph]|pre|ul)\d?((?:\s*)?(?:id|class)\=[\'\"]\w+?[\'\"](?:\s*)?)?\>/g,'<$1div$2>');
-    var s = document.getElementsByTagName('div'), cur = 0;
+    var s = document.getElementsByTagName('div'), cur = 1;
     if (!s) return;
     function go(n) {
-        cur = n;
+        cur = n||1;
         var i = 1e3, e = s[n];
         for (var k = 0; k < s.length; k++) s[k].style.display = 'none';
         e.style.display = 'inline';
@@ -30,7 +30,7 @@ window.onload = function() {
     }
     document.onclick = function() { go(++cur % (s.length)); };
     function fwd() { go(Math.min(s.length - 1, ++cur)); }
-    function rev() { go(Math.max(0, --cur)); }
+    function rev() { go(Math.max(1, --cur)); }
     document.onkeydown = function(e) {
         if (e.which === 39) fwd();
         if (e.which === 37) rev();
