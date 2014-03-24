@@ -16,6 +16,13 @@ window.onload = function() {
             e.firstChild.style.display = 'none';
         } else {
             document.body.style.backgroundImage = '';
+            if(n%2){
+                e.style.backgroundColor='#fff';
+                e.style.color='#000';
+            }else{
+                e.style.backgroundColor='#000';
+                e.style.color='#fff';
+            }
             document.body.style.backgroundColor = e.style.backgroundColor;
         }
         while (
