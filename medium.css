@@ -13,15 +13,10 @@ h1, h2, h3, p {
   margin:0;
 }
 
-em, a {
+em {
+  font-family: 'Futura', 'Helvetica';
   font-style:normal;
-  color:#8dbd0c;
-}
-
-a {
-  background: #34d0e7;
-  color:#000;
-  text-decoration:none;
+  color:#418AD0
 }
 
 img {
@@ -35,6 +30,31 @@ div {
   top:0;
   left:0;
 }
+.even {
+  background-color:#fff;
+  color:#000;
+}
+.odd {
+  background-color:#000;
+  color:#fff;
+}
+.odd a {
+  background-color:#8dbd0c;
+  color:#000;
+  text-decoration:none;
+}
+.even a {
+  background-color:#8dbd0c;
+  color:#fff;
+  text-decoration:none;
+}
+.even em {
+  color: #68228B;
+}
+.odd em {
+  color: #418AD0;
+}
+
 /*
 
 Google Code style (c) Aahan Krish <geekpanth3r@gmail.com>

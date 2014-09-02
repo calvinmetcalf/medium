@@ -24,13 +24,12 @@
             } else {
                 document.body.style.backgroundImage = '';
                 if(n%2){
-                    e.style.backgroundColor='#fff';
-                    e.style.color='#000';
+                    e.className = ' even';
                 }else{
-                    e.style.backgroundColor='#000';
-                    e.style.color='#fff';
+                    e.className = ' odd';
+                  
                 }
-                document.body.style.backgroundColor = e.style.backgroundColor;
+                document.body.className = e.className;
             }
             while (
                 e.offsetWidth > window.innerWidth ||
@@ -71,5 +70,5 @@
         };
 
         go(cur);
-    };
-}())
+    }
+}());
